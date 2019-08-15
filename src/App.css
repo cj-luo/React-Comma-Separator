@@ -1,0 +1,31 @@
+.Container {
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.sidenav{
+  display: inline-block;
+  height: 280px;
+  width: 160px;
+  margin-top: 70px;
+  margin-left: 10px;
+  border: 1px solid #337ab7;
+  border-radius: 0 0 4px 4px;
+}
+
+.form-check{
+  margin-left: 10px;
+}
+.col-md{
+  margin-left:10px;
+
+}
+
+
