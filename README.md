@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Description 
+
+THis is a font-end website which you can convert a list of value from Excel Sheet to a lookup list in SQL filter.
+e.g,： select * from table1 where id in (/* your list values here */)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
