@@ -34,6 +34,6 @@ make sure he/she won't use same letter.
 
 ## Success Rate for Robot( Only for V4 AutoRunMultipleTime)
 
-In this versions, just for curiously, Human can tell robot run N time! 
+In this versions, just for curiously, Human can tell robot run N time and count the Success Rate! 
 
 In the end. It would show you the Successful Time and Wrong Time and Success Rate!
