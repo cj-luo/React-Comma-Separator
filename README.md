@@ -1,76 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project Description 
 
-THis is a font-end website which you can convert a list of value from Excel Sheet to a lookup list in SQL filter.<br>
-e.g,： select * from table1 where id in (/* your list values here */)
+Hangman is a popular word game in which computer will generate a random phrase, the phrase to guess is represented by a row of stars,
+representing each letter of the word. The plyer(" the guesser") attempts to guess the phrase one letter at a time. If a guessed letter
+appears in the word, all instances of it are revealed. If not, the guesser loses a chance. If the guesser figures out the secret word 
+before he or she runs out of chances, he or she wins.
 
-![Image description](https://github.com/cj-luo/React-Comma-Separator/blob/master/Example.PNG)
+
+## Hightlight
+
+## User Guess Eximation
+
+If guessers input more than one letter, input is not a letter, or nothing input, it will prompte to input again and give corresponding error hint! <br>
+
+If guessers input a letter that is already tested, The Used Letter will show up and remind you try a new letter!
+
+Note: guessers would not be penalized for guessing a previously correct or incorrect guess!
+
+## Choosing GameOver or Restart
+
+When guessers win or fail the game, guessers could choose restart a new game or directly finished the game!
+
+## Robot Player(Only For V4)
+
+The guesser is a robot. The game will play the same as that version3 , showing all guesses and game feedback.
+But This robot is a smart one!(I suppose)  
+
+The robot build his/her letter libary via counting the occurencing of each letter in the targeted file! 
+
+Each guess, robot will find the letter with Highest frequency. Next time, robot will remove the previously one to 
+make sure he/she won't use same letter.
 
 
-## Available Scripts
+## Success Rate for Robot( Only for V4 AutoRunMultipleTime)
 
-In the project directory, you can run:
+In this versions, just for curiously, Human can tell robot run N time! 
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+In the end. It would show you the Successful Time and Wrong Time and Success Rate!
